@@ -10,4 +10,7 @@ class MP3Importer
     Dir.entries(path).select {|entry| entry.include?".mp3"}
   end
   
+  def import 
+    
+  
 end
