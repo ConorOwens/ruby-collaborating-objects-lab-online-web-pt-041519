@@ -12,7 +12,7 @@ class Song
     song = Song.new(name)
     artist = Artist.find_or_create_by_name(artist)
     song.artist = artist
-    artist.add_song
+    artist.add_song(song)
     return song
   end 
   
