@@ -11,7 +11,7 @@ class Song
     artist = filename.split(" - ")[0]
     song = Song.new(name)
     song.artist = Artist.find_or_create_by_name(artist)
-    song
+    return song
   end 
   
 end
